@@ -146,3 +146,41 @@ leng = int(input("Enter leng of list : "))
      number = int(input("Enter Value: "))
      list.append(number)
  print(sum(list)/len(list))
+
+# strings and lists
+a = "sawsan"
+b = list(a)
+print(b)
+# using split() by default it splits by space
+a = 'spam spam spam'
+b = a.split()
+print(b)
+a = "sawsan salah eldin"
+b = a.split()
+print(b)
+print("*"*70)
+a = "sawsan-salah-eldin"
+b = a.split("-")
+print(b)
+# to revert to string again by using join()
+c = "-".join(b)
+print(c)
+
+# Pitfalls and ways to avoid them
+# this is wrong output with none
+print("*"*100)
+mylist = [2,4,3,1,5,7]
+# mylist = mylist.sort() by adding this value  led to none function
+print(mylist)
+mylist.sort()
+print(mylist)
+print("*"*100)
+# mylist append
+mylist.append(10)
+print(mylist)
+# you need to take copy of original list
+mylist = [2,4,3,1,5,7]
+origin = mylist[:]
+mylist.append(77)
+print(mylist)
+print(origin)
