@@ -39,11 +39,13 @@ TArr = np.array([[1,10,11],[5,4,10],[24,50,12]])
 TraversArray(TArr)
 
 #searing in Two Dimensianal Array
-def SearchArray(array,value):
-    for i in range(len(array)):
-        for j in range(len(array[0])):
-            if array[i][j] == value:
-                return "The value found in index" +str(i)+""+str(j)
+ef search(array,value):
+    for raw in range(len(array)):
+        for column in range(len(array[0])):
+            if array[raw][column] == value:
+                return "value found in index",str(raw),"",str(column)
+            else:
+                 return "Value not found "
 
     return "The Value not Found"
 
