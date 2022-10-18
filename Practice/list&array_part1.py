@@ -88,6 +88,18 @@ def dupl(list):
             if list[i] == list[j]:
                 dup.append(list[i])
     return dup
+# Define program to check if list 1 equal to list 2
+
+list1 = ["c","a","t"]
+list2 = ["a","t","c","d"]
+def permutation(list1,list2):
+    if len(list1) != len(list2):
+       return False
+    else:
+         list1.sort()
+         list2.sort()
+         if list1 == list2 :
+             return True
 print(dupl(mylist))
 
 
