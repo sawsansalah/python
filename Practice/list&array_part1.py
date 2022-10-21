@@ -5,6 +5,18 @@ def missNo(list,n):
    sum2 = sum(list2)
    print(sum1 - sum2)
 missNo(list2,100)
+
+To Define it in function 
+myList = [1,2,3,4,5,6,7,9,10]
+def missingNumer(list,totalcount):
+    expectedSum = (( totalcount + 1 ) * totalcount ) /2
+    sum = 0
+    for i in list:
+        sum = sum + i
+    return (expectedSum - sum)
+print(missingNumer(myList,10))
+
+
 # Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 #
 # You may assume that each input would have exactly one solution, and you may not use the same element twice.
