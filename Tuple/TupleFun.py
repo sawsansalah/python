@@ -1,0 +1,16 @@
+# Tuple Opeartion / Functions
+myTuple = (1,2,3,4,5,2)
+myTuple1 = (8,9,10,12,13)
+print(myTuple + myTuple1)
+print(myTuple * 3)
+print(9 in myTuple1)
+print(99 in myTuple1)
+print(myTuple.count(2))
+print(myTuple1.index(8))
+print(len(myTuple))
+print(len(myTuple1))
+print(max(myTuple1))
+print(min(myTuple1))
+list = [1,2,5,8]
+t = tuple(list)
+print(t)
