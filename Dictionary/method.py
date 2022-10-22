@@ -1,0 +1,48 @@
+#Dic Method
+myDict = {'name':'sawsan','age':'44','address':'London','education':'master'}
+print(myDict)
+myDict.clear()
+print(myDict)
+# copy()
+myDict = {'name':'sawsan','age':'44','address':'London','education':'master'}
+dict = myDict.copy()
+print(myDict)
+print(dict)
+dict['name'] = 'soily'
+print(myDict)
+print(dict)
+print('*'*80)
+# fromkeys(sequence[],value)
+newDic = {}.fromkeys(['name','age','location'],'sawsan')
+print(newDic)
+print('*'*80)
+
+# get() dictionary.get(key,value)
+myDict = {'name':'sawsan','age':'44','address':'London','education':'master'}
+print(myDict.get('age',77))
+print(myDict.get('name',"Ahmed"))
+print(myDict.get('city'))
+print(myDict)
+print('*'*80)
+# items()
+print(myDict.items())
+print('*'*80)
+# keys()
+print(myDict.keys())
+#popitem() and it remove random elements
+print('#'*80)
+print(myDict.popitem())
+print(myDict)
+#setdefault(key,deafult value(optional))
+print('#'*80)
+print(myDict.setdefault('name2',"added"))
+print(myDict)
+#pop()
+myDict.pop('name1','not')
+print(myDict)
+# values()
+print(myDict.values())
+#update()
+newD = {'a':1,"b":2,"c":3}
+myDict.update(newD)
+print(myDict)
